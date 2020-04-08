@@ -2,6 +2,8 @@
 '''
 1. 숫자 두개를 받는다
 2. a와 b를 비교한다
+2-1. 만약 a가 크면 a-b
+2-2. 아니면 b-a
 3. 큰 수에서 작은 수를 빼준다
 4. 결과를 출력해준다
 '''
@@ -10,14 +12,13 @@ num1 = int(input('숫자를 입력하세요 : '))
 num2 = int(input('다른 숫자를 입력하세요 : '))
 
 def subtraction(num1, num2):
-    result = 0
     if num1 > num2:
         result = num1 - num2
     else:
         result = num2 - num1
     return result
 
-print(comparison(num1, num2))
+print(subtraction(num1, num2))
 
 #2. 두 수의 차 구하기 - 절대값을 이용하는 방법
 '''
@@ -43,9 +44,9 @@ print(absolute(num1, num2))
 num = int(input('숫자를 입력하세요 : '))
 
 def even_odd(num):
-    if num % 2 == 0:
+    if num % 2 == 0: #2로 나눈 나머지가 0이면 짝수
         result = '짝수'
-    else:
+    else:   #아니면 홀수
         result = '홀수'
 
     return result
@@ -86,14 +87,14 @@ num2 = int(input('두번째 숫자를 입력하세요 : '))
 num3 = int(input('세번째 숫자를 입력하세요 : '))
 
 def compare_three1(num1, num2, num3):
-    if num1 < num2 < num3:
-        return num3
-    elif num1 < num3 < num2:
+    if num1 > num2 and num1 > num3:
+        return num1
+    elif num2 > num1 and num2 > num3:
         return num2
     elif num1 == num2 == num3:
         return '모두 같음'
     else:
-        return num1
+        return num3
 
 print(compare_three1(num1, num2, num3))
 
@@ -117,7 +118,9 @@ d1 = {1: 'c', 2: 'b', 3: 'a'}
 def max_num(num_lst) :
     return max(num_lst)
 
-print(max_num(l1))
+print('리스트 :', max_num(l1))
+print('튜플 :', max_num(t1))
+print('딕셔너리 :', max_num(d1))
 
 #7. 두 변수 값 교환하기
 '''
@@ -145,13 +148,12 @@ low = int(input('작은 수를 입력하세요 : '))
 high = int(input('큰 수를 입력하세요 : '))
 
 def low_to_high(low, high):
-    result = high
-    while high > low :
-        result += high - 1
-        high = high -1
-        print('high =', high, 'result =', result)
+    result = high   #큰 수를 result라는 변수로 저장
+    while high > low :  #큰 수가 작은 수보다 크다면 실행 (같아지면 빠져나옴)
+        result += high - 1  #result에 큰 수 보다 하나 작은 수를 더함
+        high -= 1  #큰 수를 하나 작은 수로 다시 저장
 
-    return result
+    return result   #result 반환
 
 print(low_to_high(low, high))
 
