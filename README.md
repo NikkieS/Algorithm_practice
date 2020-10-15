@@ -4,7 +4,7 @@
   * An abstract class is an unfinished class. It includes more than one abstract method which is declared without an implementation. When an abstract class is subclassed, the subclass usually implements all of the abstract methods from the superclass otherwise the subclass must also be declared abstract.
 
 #### 자바의 메모리 구조 / Memory structure of Java
-Time of Assignment | Territory | 
+Time of Assignment | Territory | Usage
 ------------------ | --------- | ------
 At complie | CODE | 함수, 제어문, 상수
 At complie | DATA | 초기화된 전역변수
