@@ -25,5 +25,5 @@ At runtime | HEAP | 동적할당
 https://juyoung-1008.tistory.com/47
 
 ### 동기화 / Synchronized
-https://12bme.tistory.com/68
+https://12bme.tistory.com/68 - blog reference
 https://github.com/NikkieS/ClassPractice/blob/master/Java/chapter15%2616/src/ex15_Thread/ThreadMain.java
