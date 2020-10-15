@@ -4,10 +4,20 @@
   * An abstract class is an unfinished class. It includes more than one abstract method which is declared without an implementation. When an abstract class is subclassed, the subclass usually implements all of the abstract methods from the superclass otherwise the subclass must also be declared abstract.
 
 #### 자바의 메모리 구조 / Memory structure of Java
-Memory | Desc
+AssignTerritory | 
 ------ | ------
 CODE | 함수, 제어문, 상수
 DATA | 초기화된 전역변수
 BSS | 초기화 안된 전역변수
 STACK | 지역변수
-HEAP | 동적할당
+Runtime Data Area | HEAP | 동적할당
+
+#### 오버로딩과 오버라이딩 / Overloading and Overriding
+  1. Overloading
+  * 메소드 이름은 같지만 매개변수의 개수나 데이터 형식을 다르게 정의하는 것
+  * 동일한 기능을 수행하는 메소드를 하나로 정의함으로써 메모리를 아낄 수 있다
+  * ex) println()
+  
+  2. Overriding
+  * 기존에 있는 메소드를 재정의하는 것으로 매개변수의 개수나 데이터형식이 같아야 한다
+  
