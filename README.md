@@ -21,3 +21,5 @@ At runtime | HEAP | 동적할당
   2. Overriding
   * 기존에 있는 메소드를 재정의하는 것으로 매개변수의 개수나 데이터형식이 같아야 한다
   
+### 프로세스와 쓰레드의 차이점 / Difference between Process and Thread
+https://juyoung-1008.tistory.com/47 - automatic!
