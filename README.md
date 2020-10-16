@@ -26,4 +26,6 @@ https://juyoung-1008.tistory.com/47
 
 ### 동기화 / Synchronized
 https://12bme.tistory.com/68 - blog reference
-https://github.com/NikkieS/ClassPractice/blob/master/Java/chapter15%2616/src/ex15_Thread/ThreadMain.java
+1. https://github.com/NikkieS/ClassPractice/blob/master/Java/chapter15%2616/src/ex15_Thread/ThreadMain.java - 메인
+2. https://github.com/NikkieS/ClassPractice/blob/8568e4a5d08cb3e066c02c796eea0e7f65357b52/Java/chapter15%2616/src/ex15_Thread/TwoNum.java#L3 - 전역변수 역할
+3. https://github.com/NikkieS/ClassPractice/blob/8568e4a5d08cb3e066c02c796eea0e7f65357b52/Java/chapter15%2616/src/ex15_Thread/AccessThread.java#L3 - 쓰레드
