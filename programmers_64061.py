@@ -1,3 +1,10 @@
+'''
+Date : 10/29/20
+Author : GaRam Song
+URL : https://programmers.co.kr/learn/courses/30/lessons/64061
+Description : claw machine game using array list
+'''
+# My Answer
 def solution(board, moves):
     basket = []
     ans = 0
@@ -14,7 +21,7 @@ def solution(board, moves):
                 break
     return ans
 
-
+# Popular Answer
 def sol(board, moves):
     stacklist = []
     answer = 0
