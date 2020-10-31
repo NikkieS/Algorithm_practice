@@ -1,3 +1,8 @@
+'''
+Date : 10/31/20
+Author : GaRam Song
+Description : LinkedList study
+'''
 class Node:
 
     def __init__(self, item):
