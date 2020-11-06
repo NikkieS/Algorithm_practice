@@ -1,5 +1,5 @@
 """
-Date : 11/06/20
+Date : 11/05/20
 Author : GaRam Song
 URL : https://www.acmicpc.net/problem/2578
 Description : bingo
