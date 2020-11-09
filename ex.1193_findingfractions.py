@@ -57,19 +57,19 @@ else:
 
             num -= 1
         
-    print(str(idx[0]+1)+'/'+str(idx[1]+1))
+    print('{}/{}'.format(idx[0]+1,idx[1]+1))
  
 
 # Faster Code
 '''
-stage |    num    |   fraction   | denominator + numerator
-  1         1           1/1                 2
-  2        2,3        1/2, 2/1              3
-  3       4,5,6      3/1,2/2,1/3            4
-  4      7,8,9,10   1/4,2/3,3/2,4/1         5
-  5   11,12,13,14,15 5/1,4/2,3/3,2/4,1/5    6
+ stage |     num     |      fraction      | denominator + numerator
+   1          1              1/1                        2
+   2         2,3           1/2, 2/1                     3
+   3        4,5,6         3/1,2/2,1/3                   4
+   4       7,8,9,10     1/4,2/3,3/2,4/1                 5
+   5    11,12,13,14,15 5/1,4/2,3/3,2/4,1/5              6
 
-pattern
+<< pattern >>
 1. stage + 1 = denom+num
 2. stage = number of nums (num of fractions)
 3. even num stage : denom = + 1~ / numer = stage - 1
