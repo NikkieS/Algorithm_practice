@@ -15,6 +15,7 @@ Description : if each cell in a beehive is numbered from the center out
 5th wrap. 24 cells : 38,39,40, ..., 61 (6*10)
 '''
 
+# My Answer
 num = int(input())
 x = 1
 y = 0
@@ -33,3 +34,6 @@ else :
             break
         y = y+x
         x += 1
+
+# Short Coding
+print(int(-(-(3+(12*int(input())-3)**.5)//6)))
